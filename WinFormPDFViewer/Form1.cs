@@ -22,7 +22,10 @@ namespace WinFormPDFViewer
 
             locateText.TextChanged += LocateText_TextChanged;
         }
-
+       private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
         private void LocateText_TextChanged(object sender, EventArgs e)
         {
             if (locateText.Text.EndsWith("pdf", true, null) == true && 
